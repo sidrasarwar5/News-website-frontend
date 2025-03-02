@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: poppins;
+
+    }
+
+    .form-control:hover,
+    .form-control:focus {
+      background-color: beige !important;
+      border-color: beige !important;
+      box-shadow: 0 0 2px beige !important;
+
+    }
+
+    .border {
+      border: 2px solid white !important;
+      box-shadow: 6px 4px 8px rgb(241, 241, 238);
+    }
+
+    .bg-light {
+      /* background-color: #367556 !important; */
+      background-color: black;
+    }
+
+    .tag {
+      text-decoration: none;
+      color: black;
+    }
+
+    .tag:hover {
+      text-decoration: underline;
+      color: black;
+    }
+
+    .heading {
+      text-align: center;
+      color: #212529;
+      font-weight: normal;
+    }
+
+    #carouselExampleControls {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .carousel-inner {
+      height: 500px;
+    }
+
+    .text-design {
+      font-style: normal;
+      font-weight: 400;
+      color: rgb(33, 37, 41);
+      font-size: 16px;
+      line-height: 24px;
+
+    }
+
+    .bg-dark {
+      background-color: #000000;
+    }
+  </style>
+  <title>Website</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light " type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 img-fluid " src="img/slider1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" src="img/slider2.webp" alt="Second slide">
+      </div>
+      <div class="carousel-item ">
+        <img class="d-block w-100 img-fluid" src="img/slider3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+  <hr>
+  <h3 class="heading">Latest News</h3>
+  <hr>
+
+
+  <div class="container mt-3 ">
+    <div class="row">
+      <div class="col-12 col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 ">
+        <img class="img-fluid" src="img/law.jpg" alt="" style="height: 350px ; width: 600px;">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus perferendis voluptatum in dolores
+          earum repellat eveniet adipisci sapiente reiciendis non facere incidunt sunt sequi distinctio, modi corrupti
+          placeat debitis. Explicabo assumenda officia expedita incidunt modi ullam, distinctio doloremque inventore
+          quibusdam nostrum ducimus sapiente. Cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam deleniti officiis dolorum quidem odio
+          possimus dolores, et sed quia cupiditate tempore facere, facilis, culpa eius ipsam laudantium explicabo
+          sapiente recusandae? Autem ducimus nihil ratione quis, a commodi magni. Quia mollitia velit rem esse ipsum
+          molestiae cumque sapiente, eaque perferendis nostrum quis labore cum exercitationem obcaecati odit quidem eum
+          ipsa pariatur, suscipit, libero aspernatur. Dolorum.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda, non molestiae cum quam explicabo
+          rerum quidem laboriosam. Adipisci ipsum natus, cumque molestias non expedita rem deserunt nostrum molestiae
+          distinctio illum iure nulla voluptatem fugiat culpa eius laudantium corporis velit voluptatibus fuga. Fugit
+          culpa veniam maiores nulla exercitationem accusamus labore voluptatem veritatis magni obcaecati, mollitia
+          laudantium, eos delectus officia soluta numquam quam hic corrupti temporibus adipisci officiis unde cumque
+          quae quos. Sequi quo temporibus vitae iste molestias quisquam cum animi voluptatibus, rerum omnis maxime
+          distinctio cupiditate et.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, qui fuga delectus ullam recusandae
+          distinctio ratione sequi eum porro accusantium, exercitationem voluptas, explicabo optio possimus cumque
+          repudiandae eveniet facere magnam! Rerum, sequi saepe? Optio harum molestiae facere ullam molestias veritatis
+          officiis excepturi dolorem placeat nesciunt consectetur ducimus minus incidunt obcaecati neque odio, animi
+          perspiciatis aliquid ipsum sed accusamus repellat suscipit! Quasi similique aut consequatur eius ut dolorum
+          labore unde numquam sequi eos id mollitia harum doloremque aliquid in, laboriosam et temporibus magnam
+          voluptas minima officia odit? Debitis ipsum officia assumenda ratione soluta fugit amet quod, rem blanditiis.
+          Numquam libero ex doloribus dolorum!</p>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, et incidunt amet commodi aliquam
+          architecto veritatis hic maiores illum non dolorem magnam dicta sit dolorum, mollitia, ad voluptatibus
+          nesciunt necessitatibus! Repudiandae eveniet saepe, architecto ducimus voluptatem doloribus aliquid? Qui,
+          nobis. Fugiat hic esse expedita earum! Repellendus, officia explicabo tempora tempore illo voluptas
+          consequuntur in ipsa qui quisquam vitae recusandae cupiditate beatae? Obcaecati eligendi nihil quis quidem
+          ipsam consequatur voluptates sit! Sed qui assumenda aliquam harum quis sapiente consequatur est vel a incidunt
+          voluptatibus quaerat, libero facilis quisquam hic accusantium laborum minima? Quibusdam blanditiis, eaque
+          perferendis quasi dignissimos quam doloremque! Recusandae.</p>
+      </div>
+
+      <div class="col-12  col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 border">
+        <a href="#" class="img1 tag">
+          <img src="img/news2.jpg" class="img-fluid" alt="" style="height: 200px ; width: 300px;">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+        <a href="#" class="img2 tag">
+          <img src="img/news3.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+
+        <a href="#" class="img3 tag">
+          <img src="img/news4.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+
+        <a href="#" class="img3 tag">
+          <img src="img/news5.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="m-3 ">
+  <h3 class="heading ">Citizen's Corner</h3>
+  <hr>
+  <div class="container mt-3 ">
+    <div class="row">
+      <div class="col-12 col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 ">
+        <img class="img-fluid" src="img/news6.jpg" alt="" style="height: 350px ; width: 600px;">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus perferendis voluptatum in dolores
+          earum repellat eveniet adipisci sapiente reiciendis non facere incidunt sunt sequi distinctio, modi corrupti
+          placeat debitis. Explicabo assumenda officia expedita incidunt modi ullam, distinctio doloremque inventore
+          quibusdam nostrum ducimus sapiente. Cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam deleniti officiis dolorum quidem odio
+          possimus dolores, et sed quia cupiditate tempore facere, facilis, culpa eius ipsam laudantium explicabo
+          sapiente recusandae? Autem ducimus nihil ratione quis, a commodi magni. Quia mollitia velit rem esse ipsum
+          molestiae cumque sapiente, eaque perferendis nostrum quis labore cum exercitationem obcaecati odit quidem eum
+          ipsa pariatur, suscipit, libero aspernatur. Dolorum.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda, non molestiae cum quam explicabo
+          rerum quidem laboriosam. Adipisci ipsum natus, cumque molestias non expedita rem deserunt nostrum molestiae
+          distinctio illum iure nulla voluptatem fugiat culpa eius laudantium corporis velit voluptatibus fuga. Fugit
+          culpa veniam maiores nulla exercitationem accusamus labore voluptatem veritatis magni obcaecati, mollitia
+          laudantium, eos delectus officia soluta numquam quam hic corrupti temporibus adipisci officiis unde cumque
+          quae quos. Sequi quo temporibus vitae iste molestias quisquam cum animi voluptatibus, rerum omnis maxime
+          distinctio cupiditate et.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, qui fuga delectus ullam recusandae
+          distinctio ratione sequi eum porro accusantium, exercitationem voluptas, explicabo optio possimus cumque
+          repudiandae eveniet facere magnam! Rerum, sequi saepe? Optio harum molestiae facere ullam molestias veritatis
+          officiis excepturi dolorem placeat nesciunt consectetur ducimus minus incidunt obcaecati neque odio, animi
+          perspiciatis aliquid ipsum sed accusamus repellat suscipit! Quasi similique aut consequatur eius ut dolorum
+          labore unde numquam sequi eos id mollitia harum doloremque aliquid in, laboriosam et temporibus magnam
+          voluptas minima officia odit? Debitis ipsum officia assumenda ratione soluta fugit amet quod, rem blanditiis.
+          Numquam libero ex doloribus dolorum!</p>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, et incidunt amet commodi aliquam
+          architecto veritatis hic maiores illum non dolorem magnam dicta sit dolorum, mollitia, ad voluptatibus
+          nesciunt necessitatibus! Repudiandae eveniet saepe, architecto ducimus voluptatem doloribus aliquid? Qui,
+          nobis. Fugiat hic esse expedita earum! Repellendus, officia explicabo tempora tempore illo voluptas
+          consequuntur in ipsa qui quisquam vitae recusandae cupiditate beatae? Obcaecati eligendi nihil quis quidem
+          ipsam consequatur voluptates sit! Sed qui assumenda aliquam harum quis sapiente consequatur est vel a incidunt
+          voluptatibus quaerat, libero facilis quisquam hic accusantium laborum minima? Quibusdam blanditiis, eaque
+          perferendis quasi dignissimos quam doloremque! Recusandae.</p>
+      </div>
+
+      <div class="col-12  col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 border">
+        <a href="#" class="img1 tag">
+          <img src="img/news2.jpg" class="img-fluid" alt="" style="height: 200px ; width: 300px;">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+        <a href="#" class="img2 tag">
+          <img src="img/news3.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+
+        <a href="#" class="img3 tag">
+          <img src="img/news4.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+
+
+        <a href="#" class="img3 tag">
+          <img src="img/news5.jpg" class="img-fluid" style="height: 200px ; width: 300px;" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet magni exercitationem ad
+            recusandae?</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <footer class="bg-dark text-light pt-4 mt-3">
+      <div class="container">
+        <div class="row">
+      
+
+          <div class="col-md-3 col-sm-6">
+            <h5>About Us</h5>
+            <p>We provide the latest news to keep you updated.</p>
+          </div>
+         
+
+
+          <div class="col-md-3 col-sm-6">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none">other websites</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Articles</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+        
+
+
+          
+          <div class="col-md-3 col-sm-6">
+            <h5>Support</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <h5>Contact Us</h5>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center pb-3">
+          <p class="mb-0">&copy; 2025 Your Company. All Rights Reserved.</p>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  </html>
